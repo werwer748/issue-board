@@ -27,7 +27,8 @@ export default function App() {
     filters.query !== DEFAULT_FILTERS.query ||
     filters.state !== DEFAULT_FILTERS.state ||
     filters.label !== DEFAULT_FILTERS.label;
-  const pending = loading || stale || query !== filters.query;
+  // 요청 진행 중일 때만 스피너. 실패 후 남은 stale 결과는 흐리게만 표시한다.
+  const pending = loading || query !== filters.query;
 
   return (
     <div className="app">
@@ -77,7 +78,7 @@ export default function App() {
               </span>
               {pending && <span className="spinner" aria-label="불러오는 중" />}
             </div>
-            <IssueList issues={data.issues} stale={pending} onReset={resetFilters} />
+            <IssueList issues={data.issues} stale={pending || stale} onReset={resetFilters} />
           </section>
           <aside className="panel">
             <LabelStats labelCounts={data.labelCounts} total={data.total} />
