@@ -6,8 +6,8 @@ export function formatDate(iso) {
 }
 
 // 릴리스 본문(markdown)에서 앞쪽 항목 몇 줄만 평문으로 뽑는다.
-export function summarize(body = '', max = 4) {
-  const lines = body
+export function summarize(body, max = 4) {
+  const lines = String(body ?? '')
     .split('\n')
     .map((l) => l.trim())
     .filter((l) => l && !l.startsWith('#'))

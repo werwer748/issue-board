@@ -8,7 +8,7 @@
     "accept": "node --test acceptance/*.test.mjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22.12.0"
   },
   "type": "module",
   "dependencies": {

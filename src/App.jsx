@@ -14,7 +14,7 @@ export default function App() {
 
   // 검색어는 타이핑이 멈춘 뒤 요청한다. 상태·라벨은 바로 반영.
   const query = useDebounced(filters.query, 250);
-  const { data, error, loading, retry } = useDashboard({
+  const { data, error, loading, stale, retry } = useDashboard({
     source,
     query,
     state: filters.state,
@@ -27,7 +27,7 @@ export default function App() {
     filters.query !== DEFAULT_FILTERS.query ||
     filters.state !== DEFAULT_FILTERS.state ||
     filters.label !== DEFAULT_FILTERS.label;
-  const pending = loading || query !== filters.query;
+  const pending = loading || stale || query !== filters.query;
 
   return (
     <div className="app">
