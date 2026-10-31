@@ -1,7 +1,13 @@
 import Label from './Label.jsx';
-import { formatDate } from '../format.js';
+import { formatDate, splitHighlight } from '../format.js';
 
-export default function IssueList({ issues, stale, onReset }) {
+function HighlightedTitle({ title, query }) {
+  return splitHighlight(title, query).map((part, i) =>
+    part.match ? <mark key={i} className="highlight">{part.text}</mark> : part.text,
+  );
+}
+
+export default function IssueList({ issues, query, stale, onReset }) {
   if (issues.length === 0) {
     return (
       <div className="empty">
@@ -18,7 +24,7 @@ export default function IssueList({ issues, stale, onReset }) {
           <span className={`state ${issue.state}`}>{issue.state === 'open' ? '열림' : '닫힘'}</span>
           <div className="issue-body">
             <a href={issue.html_url} target="_blank" rel="noreferrer" className="issue-title">
-              {issue.title}
+              <HighlightedTitle title={issue.title} query={query} />
             </a>
             <div className="issue-meta">
               <span className="muted">#{issue.number}</span>

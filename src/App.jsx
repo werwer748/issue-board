@@ -78,7 +78,8 @@ export default function App() {
               </span>
               {pending && <span className="spinner" aria-label="불러오는 중" />}
             </div>
-            <IssueList issues={data.issues} stale={pending || stale} onReset={resetFilters} />
+            {/* 하이라이트는 입력 중인 값이 아니라 서버에 보낸 검색어(디바운스된 값) 기준이다. */}
+            <IssueList issues={data.issues} query={query} stale={pending || stale} onReset={resetFilters} />
           </section>
           <aside className="panel">
             <LabelStats labelCounts={data.labelCounts} total={data.total} />
