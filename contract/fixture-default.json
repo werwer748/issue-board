@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "repository": "herdrdev/herdr",
+  "capturedAt": "2026-10-20",
+  "source": "https://api.github.com/repos/herdrdev/herdr/issues?state=all&per_page=30",
+  "scope": "최근 30개 issue/PR 응답 중 PR 제외; 전체 저장소 통계가 아닙니다.",
+  "issues": [
+    {
+      "number": 5442,
+      "title": "macOS: large Kitty images are copied and sent as base64, so they lag",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5442",
+      "created_at": "2026-10-20T18:19:22Z",
+      "updated_at": "2026-10-20T18:21:35Z",
+      "comments": 1
+    },
+    {
+      "number": 5441,
+      "title": "Add atomic session-fenced agent stop",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "feature-req",
+          "color": "27485b"
+        },
+        {
+          "name": "api",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5441",
+      "created_at": "2026-10-20T18:15:43Z",
+      "updated_at": "2026-10-20T18:17:15Z",
+      "comments": 1
+    },
+    {
+      "number": 5439,
+      "title": "Tab label with combining marks (U+0336) renders its highlight off centre",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "rendering",
+          "color": "1D76DB"
+        },
+        {
+          "name": "ui",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5439",
+      "created_at": "2026-10-20T15:29:05Z",
+      "updated_at": "2026-10-20T15:31:41Z",
+      "comments": 0
+    },
+    {
+      "number": 5438,
+      "title": "agent prompt/send-keys reject both the name and the pane ID with agent_not_ready while agent list/get still report the agent as healthy (Command Code, Windows)",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "api",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5438",
+      "created_at": "2026-10-20T15:16:10Z",
+      "updated_at": "2026-10-20T15:19:22Z",
+      "comments": 1
+    },
+    {
+      "number": 5435,
+      "title": "Feature request: per-element color overrides in `[theme.custom]`",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "feature-req",
+          "color": "27485b"
+        },
+        {
+          "name": "ui",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5435",
+      "created_at": "2026-10-20T14:56:03Z",
+      "updated_at": "2026-10-20T14:58:24Z",
+      "comments": 1
+    },
+    {
+      "number": 5434,
+      "title": "Windows preview server exits with unexpected clone failure when restoring Pi sessions",
+      "state": "open",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "windows",
+          "color": "5319E7"
+        },
+        {
+          "name": "maintainer-needed",
+          "color": "5319E7"
+        },
+        {
+          "name": "p1",
+          "color": "D93F0B"
+        },
+        {
+          "name": "rendering",
+          "color": "1D76DB"
+        },
+        {
+          "name": "sessions",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5434",
+      "created_at": "2026-10-20T14:08:26Z",
+      "updated_at": "2026-10-20T14:10:59Z",
+      "comments": 0
+    },
+    {
+      "number": 5432,
+      "title": "Windows + WezTerm: mouse movement injects garbage characters into pane input",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "windows",
+          "color": "5319E7"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5432",
+      "created_at": "2026-10-20T12:58:59Z",
+      "updated_at": "2026-10-20T13:00:52Z",
+      "comments": 1
+    },
+    {
+      "number": 5431,
+      "title": "Windows, 0.9.5: mouse drag-select in panes does nothing (Tabby and Windows Terminal) although Down/Drag/Up events reach the client",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "windows",
+          "color": "5319E7"
+        },
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5431",
+      "created_at": "2026-10-20T12:24:35Z",
+      "updated_at": "2026-10-20T12:41:46Z",
+      "comments": 4
+    },
+    {
+      "number": 5427,
+      "title": "Curly underlines in panes turn straight while Herdr shows a modal, menu, toast, or selection",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "rendering",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5427",
+      "created_at": "2026-10-20T09:47:04Z",
+      "updated_at": "2026-10-20T09:48:58Z",
+      "comments": 0
+    },
+    {
+      "number": 5424,
+      "title": "Copy mode starts at the bottom-left instead of the input caret in Claude Code and pi panes",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5424",
+      "created_at": "2026-10-20T07:48:43Z",
+      "updated_at": "2026-10-20T07:50:19Z",
+      "comments": 0
+    },
+    {
+      "number": 5420,
+      "title": "Sidebar: per-space row layouts (rows_by_workspace) and non-focusable spaces for widget-style plugins",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "feature-req",
+          "color": "27485b"
+        },
+        {
+          "name": "ui",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5420",
+      "created_at": "2026-10-20T05:54:29Z",
+      "updated_at": "2026-10-20T06:01:49Z",
+      "comments": 1
+    },
+    {
+      "number": 5418,
+      "title": "omp pane integration never reports `working`, so `agent prompt --wait` always returns `agent_prompt_stalled`",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "linux",
+          "color": "5319E7"
+        },
+        {
+          "name": "agent-detection",
+          "color": "1D76DB"
+        },
+        {
+          "name": "api",
+          "color": "1D76DB"
+        },
+        {
+          "name": "integrations",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5418",
+      "created_at": "2026-10-20T03:10:42Z",
+      "updated_at": "2026-10-20T03:12:31Z",
+      "comments": 0
+    },
+    {
+      "number": 5416,
+      "title": "omp: agent prompt drops the Enter (text stays in input line); completion_seq null before first turn",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "linux",
+          "color": "5319E7"
+        },
+        {
+          "name": "api",
+          "color": "1D76DB"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5416",
+      "created_at": "2026-10-20T00:20:41Z",
+      "updated_at": "2026-10-20T00:22:47Z",
+      "comments": 0
+    },
+    {
+      "number": 5414,
+      "title": "Add configurable keys.navigate_workspace_left / keys.navigate_workspace_right for Go To picker workspace jumps",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "feature-req",
+          "color": "27485b"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5414",
+      "created_at": "2026-10-19T22:45:50Z",
+      "updated_at": "2026-10-19T22:47:20Z",
+      "comments": 1
+    },
+    {
+      "number": 5409,
+      "title": "Workspace stays done while a dispatched agent is working until the dispatcher's tab is viewed",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5409",
+      "created_at": "2026-10-19T18:47:35Z",
+      "updated_at": "2026-10-19T18:50:01Z",
+      "comments": 1
+    },
+    {
+      "number": 5408,
+      "title": "terminal attach shows text but omits Kitty images on 0.9.5",
+      "state": "open",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "linux",
+          "color": "5319E7"
+        },
+        {
+          "name": "rendering",
+          "color": "1D76DB"
+        },
+        {
+          "name": "kitty-protocol",
+          "color": "0E8A16"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5408",
+      "created_at": "2026-10-19T18:20:45Z",
+      "updated_at": "2026-10-19T18:22:36Z",
+      "comments": 0
+    },
+    {
+      "number": 5407,
+      "title": "Windows: saved SSH reconnect stays unavailable with os error 5",
+      "state": "open",
+      "labels": [
+        {
+          "name": "windows",
+          "color": "5319E7"
+        },
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "remote",
+          "color": "5319E7"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5407",
+      "created_at": "2026-10-19T18:09:26Z",
+      "updated_at": "2026-10-19T18:58:00Z",
+      "comments": 0
+    },
+    {
+      "number": 5403,
+      "title": "Pasting a large clipboard image in --remote drops the client with \"endpoint write timed out\"",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5403",
+      "created_at": "2026-10-19T17:27:39Z",
+      "updated_at": "2026-10-19T17:30:07Z",
+      "comments": 1
+    },
+    {
+      "number": 5402,
+      "title": "Read-only / scoped access to the socket API, so sandboxed agents can verify their own pane without full control",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "api",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5402",
+      "created_at": "2026-10-19T16:46:01Z",
+      "updated_at": "2026-10-20T02:17:43Z",
+      "comments": 2
+    },
+    {
+      "number": 5401,
+      "title": "`integration status` / update notice only cover one config home per invocation; unregistered or failing hooks look healthy",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "integrations",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5401",
+      "created_at": "2026-10-19T16:46:00Z",
+      "updated_at": "2026-10-19T16:47:45Z",
+      "comments": 1
+    },
+    {
+      "number": 5398,
+      "title": "IME-committed text is lost when a pane app enables kitty key event types together with modifyOtherKeys",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "remote",
+          "color": "5319E7"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "kitty-protocol",
+          "color": "0E8A16"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5398",
+      "created_at": "2026-10-19T13:15:40Z",
+      "updated_at": "2026-10-19T13:18:24Z",
+      "comments": 0
+    },
+    {
+      "number": 5396,
+      "title": "使用页面出现我的鼠标轨迹",
+      "state": "open",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5396",
+      "created_at": "2026-10-19T11:14:43Z",
+      "updated_at": "2026-10-19T11:16:28Z",
+      "comments": 1
+    },
+    {
+      "number": 5394,
+      "title": "`terminal session observe` sends more than a full frame for every one-line scroll",
+      "state": "open",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "remote",
+          "color": "5319E7"
+        },
+        {
+          "name": "performance",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5394",
+      "created_at": "2026-10-19T07:57:03Z",
+      "updated_at": "2026-10-19T08:00:05Z",
+      "comments": 0
+    },
+    {
+      "number": 5393,
+      "title": "Herdr UI: mouse wheel scrolling is very slow in Claude Code and Codex panes (plain shell panes are fine)",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "p2",
+          "color": "FBCA04"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "input",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5393",
+      "created_at": "2026-10-19T06:56:34Z",
+      "updated_at": "2026-10-19T14:49:46Z",
+      "comments": 0
+    },
+    {
+      "number": 5392,
+      "title": "Agent detection keyed on argv0 loses Kimi Code when the process rewrites its own title — consider matching on executable name",
+      "state": "closed",
+      "labels": [
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "macos",
+          "color": "5319E7"
+        },
+        {
+          "name": "agent-detection",
+          "color": "1D76DB"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5392",
+      "created_at": "2026-10-19T03:17:14Z",
+      "updated_at": "2026-10-19T03:19:24Z",
+      "comments": 2
+    },
+    {
+      "number": 5391,
+      "title": "Windows: a pane shell killed from outside herdr drops the pane, and the last one clears session.json",
+      "state": "open",
+      "labels": [
+        {
+          "name": "windows",
+          "color": "5319E7"
+        },
+        {
+          "name": "maintainer-needed",
+          "color": "5319E7"
+        },
+        {
+          "name": "p1",
+          "color": "D93F0B"
+        },
+        {
+          "name": "sessions",
+          "color": "1D76DB"
+        },
+        {
+          "name": "triaged",
+          "color": "0E8A16"
+        }
+      ],
+      "html_url": "https://github.com/herdrdev/herdr/issues/5391",
+      "created_at": "2026-10-19T03:05:03Z",
+      "updated_at": "2026-10-19T03:07:38Z",
+      "comments": 0
+    }
+  ],
+  "releases": [
+    {
+      "tag_name": "v0.9.5",
+      "name": "v0.9.5",
+      "html_url": "https://github.com/herdrdev/herdr/releases/tag/v0.9.5",
+      "published_at": "2026-10-14T16:07:28Z",
+      "body": "This is a hotfix release for v0.9.4. See the v0.9.4 notes for the full feature release: https://github.com/herdrdev/herdr/releases/tag/v0.9.4\n\n### Fixed\n- Prefix shortcuts work again when the terminal sends the next key as plain text. This affected Tern, Chinese, Japanese and Korean input methods on macOS, and Ghostty `text:` keybinds that send the prefix and a key together. Workspace navigation had the same problem. (#5255)\n- Codex sessions no longer start with a \"clamping Interrupt hook timeout\" warning. Herdr no longer installs Codex turn hooks, and Codex status comes from screen detection again. Run `herdr integration install codex` to update. (#5246, #5278)\n- Claude Code questions show as blocked in named sessions. (#4573, #5192)\n- On Windows, plugin panes start even when a folder on `PATH` has the same name as the plugin's program. (#5267, #5269, thanks @JJLiebig)\n- On Windows, Claude Code session tracking works when the user folder name contains non-ASCII characters, such as Korean. (#5253, #5270, thanks @JJLiebig)\n- Adding a Windows machine no longer prints raw PowerShell progress output. (#4639, #5282, thanks @JJLiebig)\n",
+      "prerelease": false
+    },
+    {
+      "tag_name": "v0.9.4",
+      "name": "v0.9.4",
+      "html_url": "https://github.com/herdrdev/herdr/releases/tag/v0.9.4",
+      "published_at": "2026-10-13T15:41:22Z",
+      "body": "### Added\n- `herdr plugin update` updates plugins installed from GitHub, all at once or by name. Running plugin panes keep working on their old files, and new runs pick up the update without a config reload. Locally linked plugins are left alone. (#4245, thanks @JJLiebig)\n- Windows notifications stay in Notification Center. Clicking one jumps to its pane and brings the terminal window forward. (#4773, #4803, thanks @JJLiebig)\n\n### Changed\n- An elevated Windows server now only accepts administrator clients by default. To let normal clients from the same account in, set `[server] allow_unelevated_clients = true` or start the server with `--allow-unelevated-clients`. Permission errors now say how to fix them, and sessions you can't reach show as unavailable instead of stopped. (#4717, #4769, #4777, #4779, thanks @JJLiebig)\n- On Linux and macOS, closing the shell that started Herdr no longer stops the server. Scripts that stopped Herdr with `SIGHUP` should use `herdr server stop` or `SIGTERM`. The server log now says why the server stopped. (#4920, #4965)\n- With mouse capture on, plugins that handle a link get first pick when you click it. Turn capture off to use your terminal's own link shortcuts, like Command-click on macOS. (#4874, #5064, thanks @JJLiebig)\n- Antigravity and Grok count as idle once they are back at their prompt, even if their own background tasks or subagents are still running. (#3530, #4735, #4959)\n- Ctrl+Shift+letter reaches plain shells as the Ctrl key, like in Alacritty and WezTerm. Super, Hyper and Meta shortcuts no longer type escape-code junk into apps that can't read them. (#4356, #5017)\n\n### Fixed\n- Restarting a Mac or shutting down Windows keeps your agents' sessions. Herdr saves before the system starts closing apps, so agents come back where they were. (#4414, #5013, #5057, #5092, thanks @JJLiebig)\n- Session saves are written to disk before they replace the old file, so a crash or power cut can't leave an unreadable save. (#5150, #5152, thanks @JJLiebig)\n- The server keeps running when the machine runs out of processes or threads, instead of taking every pane down with it. (#3324, #4958)\n- An out-of-range workspace number returns `workspace_not_found` instead of crashing the server. (#5096, #5171)\n- Suspending an agent with Ctrl+Z and bringing it back with `fg` keeps its name and saved conversation. (#1647, #4964)\n- Restoring a session stays responsive when a checkout's Git data is slow or missing. Worktree groups survive checkouts that are temporarily unavailable, and opening the same repository twice no longer nests one workspace inside the other. (#4926, #4736, #4945, #4770, #4772, thanks @minatoaquaMK2 and @JJLiebig)\n- Closing a workspace's only pane asks first, like closing its last tab already does. Turn this off with `ui.confirm_close = false`. (#5143, #5173)\n- Ctrl shortcuts like Ctrl+W work on non-Latin keyboard layouts such as Russian, Greek or Hebrew. Latin layouts and AltGr characters keep their normal meaning. (#1079, #4961)\n- Accent keys and AltGr shortcuts work on Windows. (#4688, #5021, thanks @JJLiebig)\n- Shift+Enter and other enhanced keys keep working after the outer terminal resets, for example after VS Code's Reload Window. (#4985, #5088)\n- Quick Escape taps work on macOS with WezTerm's Kitty keyboard mode. (#1266, #5089)\n- Kitty keyboard apps get key releases and F1, F2 and F4 correctly, and Backspace works when the terminal sends Ctrl+H for it. (#4184, #4403, #3244, #5017)\n- Keyboard and terminal color replies no longer leak stray characters into pane input, and a half-finished color reply no longer freezes typing. (#4856, #4025, #5052, #5017, #5087)\n- Fish no longer repeats prompt fragments while you resize a pane. The same problem with zsh and Powerlevel10k is still open, waiting on a Ghostty fix. (#3672, #4977)\n- Apps that ask for pixel mouse coordinates get them, and clicks land in the right place on terminals that only report cells. (#4750, #3675, #5017, #4971)\n- Turning off Kitty graphics makes panes stop advertising image support, so apps fall back to text. (#4978, #4979)\n- Typing shows up faster, especially in PowerShell. (#4884, #5149, thanks @JJLiebig)\n- Big sessions use less CPU on busy agents and idle shells, hidden panes use less memory, and Windows panes need fewer threads. (#4506, #5083, #4845, #4847, #4849, #4850, #4873, #5085, #5091, thanks @JJLiebig)\n- New workspaces, tabs and splits start their shell at the right size instead of borrowing another pane's size. (#4419, #4873)\n- Forwarded SSH agents are no longer contacted every second, which could eventually break SSH and Git authentication. (#4931, #4962)\n- Sidebar width, collapsed groups and agent sorting on remote machines survive reconnects. Switching workspaces quickly while changing machines no longer gets canceled. (#4364, #5019, #4536, #5061, thanks @minatoaquaMK2 and @JJLiebig)\n- The sidebar collapse button stays clickable when the agent list has a scrollbar. (#4692, #4734, thanks @minatoaquaMK2)\n- The welcome screen shows your configured prefix. (#4745, #4747, thanks @JJLiebig)\n- Ctrl+[ leaves workspace navigation. (#1431, #2340, thanks @qaz74107410)\n- Keybindings that use `+` survive config reloads, and `/` opens Go To search on layouts where it needs Shift. (#4960, #4963, #4983, #5090, thanks @minatoaquaMK2)\n- Pasting from WezTerm on Windows into remote panes no longer types encoded key data. Copying no longer adds duplicate clipboard history entries, and closing a pane no longer hangs on a pending Enter. (#4725, #4730, #4709, #4872, thanks @JJLiebig)\n- Windows shells started through Scoop or 32-bit wrappers keep their working directory in new tabs and after restarts. (#4472, #4749, #5062, thanks @JJLiebig)\n- Windows ARM64 machines can be used as remote hosts through the x64 build, on a best-effort basis. (#4752)\n- Codex reports finished turns through its integration when started with `--no-daemon`, its startup update screen shows as blocked, and Codex and Pi status is recognized in more cases. (#4507, #4811, #4756, #5174, thanks @JJLiebig)\n- Antigravity permission, question and workspace-trust dialogs show as blocked, and its thinking spinner shows as working. (#3871, #3419, #3530, #4959)\n- Hermes started through its Python installer is recognized, and installing or removing its integration keeps your YAML plugin list intact. (#4910, #4909, #4911, #4984, thanks @minatoaquaMK2)\n- On macOS, `pane run` and `agent start` refuse commands too long for a shell that is still starting, instead of silently cutting them off. (#4950, #4988, thanks @minatoaquaMK2)\n\n### Removed\n- The experimental `HERDR_WINDOWS_INPUT_BACKEND=crossterm` setting is gone. Windows always uses its native console input. (#5017)\n",
+      "prerelease": false
+    },
+    {
+      "tag_name": "v0.9.3",
+      "name": "v0.9.3",
+      "html_url": "https://github.com/herdrdev/herdr/releases/tag/v0.9.3",
+      "published_at": "2026-09-29T19:29:23Z",
+      "body": "This is a hotfix release for v0.9.2. See the v0.9.2 notes for the full feature release: https://github.com/herdrdev/herdr/releases/tag/v0.9.2\n\n### Fixed\n- Terminal shortcuts that send Escape followed by a key work again in panes. On macOS, Option+Left/Right and Option+Backspace from Ghostty's defaults or iTerm2's Natural Text Editing preset move and delete by word again, instead of typing `b` and `f` or deleting one character. Escape-based Shift+Enter bindings insert a newline in Claude Code instead of submitting. Clicking a pane still doesn't send a stray Escape. (#4751)\n- Alt+[ followed quickly by another key no longer merges into a different key. (#4751)\n",
+      "prerelease": false
+    }
+  ],
+  "warning": null,
+  "total": 26,
+  "filtered": 26,
+  "labels": [
+    "agent-detection",
+    "api",
+    "bug",
+    "duplicate",
+    "feature-req",
+    "input",
+    "integrations",
+    "kitty-protocol",
+    "linux",
+    "macos",
+    "maintainer-needed",
+    "p1",
+    "p2",
+    "performance",
+    "remote",
+    "rendering",
+    "sessions",
+    "triaged",
+    "ui",
+    "windows"
+  ],
+  "labelCounts": [
+    {
+      "name": "triaged",
+      "count": 14
+    },
+    {
+      "name": "p2",
+      "count": 12
+    },
+    {
+      "name": "duplicate",
+      "count": 8
+    },
+    {
+      "name": "input",
+      "count": 8
+    },
+    {
+      "name": "macos",
+      "count": 7
+    },
+    {
+      "name": "api",
+      "count": 5
+    },
+    {
+      "name": "windows",
+      "count": 5
+    },
+    {
+      "name": "feature-req",
+      "count": 4
+    },
+    {
+      "name": "rendering",
+      "count": 4
+    },
+    {
+      "name": "bug",
+      "count": 3
+    },
+    {
+      "name": "linux",
+      "count": 3
+    },
+    {
+      "name": "remote",
+      "count": 3
+    },
+    {
+      "name": "ui",
+      "count": 3
+    },
+    {
+      "name": "agent-detection",
+      "count": 2
+    },
+    {
+      "name": "integrations",
+      "count": 2
+    },
+    {
+      "name": "kitty-protocol",
+      "count": 2
+    },
+    {
+      "name": "maintainer-needed",
+      "count": 2
+    },
+    {
+      "name": "p1",
+      "count": 2
+    },
+    {
+      "name": "sessions",
+      "count": 2
+    },
+    {
+      "name": "performance",
+      "count": 1
+    }
+  ]
+}
