@@ -24,9 +24,11 @@ export default function IssueList({ issues, stale, onReset }) {
               <span className="muted">#{issue.number}</span>
               <span className="muted">{formatDate(issue.created_at)} 작성</span>
               {issue.comments > 0 && <span className="muted">💬 {issue.comments}</span>}
-              {issue.labels.map((l) => (
-                <Label key={l.name} name={l.name} color={l.color} />
-              ))}
+              {issue.labels.map((l) => {
+                // live 응답에는 문자열 라벨도 섞여 올 수 있다.
+                const name = typeof l === 'string' ? l : l.name;
+                return <Label key={name} name={name} color={typeof l === 'string' ? undefined : l.color} />;
+              })}
             </div>
           </div>
         </li>

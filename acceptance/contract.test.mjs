@@ -14,13 +14,22 @@ test('default response reports totals and server aggregates', async t=>{
   assert.equal(d.total,snapshot.issues.length); assert.equal(d.filtered,d.issues.length);
   const expected=new Map();
   for(const i of snapshot.issues){ const names=[...new Set(i.labels.map(l=>l.name))]; for(const n of names.length?names:['라벨 없음']) expected.set(n,(expected.get(n)||0)+1); }
-  assert.deepEqual(new Map(d.labelCounts.map(x=>[x.name,x.count])),expected);
+  // 계약: count 내림차순, 동률은 이름순. 순서까지 비교한다.
+  const cmp=(a,b)=>a.localeCompare(b,'ko');
+  const sorted=[...expected].map(([name,count])=>({name,count})).sort((a,b)=>b.count-a.count||cmp(a.name,b.name));
+  assert.deepEqual(d.labelCounts,sorted);
   assert.deepEqual(d.labels,[...new Set(snapshot.issues.flatMap(i=>i.labels.map(l=>l.name)))].sort());
 });
 test('search, state and label are intersected on server',async t=>{
   const item=snapshot.issues[0]; const label=item.labels[0]?.name??'__unlabelled__';
   const r=await api(t,new URLSearchParams({query:`#${item.number}`,state:item.state,label})); const d=await r.json();
   assert.deepEqual(d.issues.map(x=>x.number),[item.number]); assert.equal(d.filtered,1);
+  // 음성 사례: 같은 번호라도 상태나 라벨이 맞지 않으면 빠져야 한다.
+  const other=item.state==='open'?'closed':'open';
+  const s=await (await api(t,new URLSearchParams({query:`#${item.number}`,state:other,label}))).json();
+  assert.deepEqual(s.issues,[]);
+  const l=await (await api(t,new URLSearchParams({query:`#${item.number}`,state:item.state,label:'no-such-label-934789'}))).json();
+  assert.deepEqual(l.issues,[]);
 });
 test('empty results preserve global totals and aggregates',async t=>{
   const a=await (await api(t)).json(); const b=await (await api(t,'query=no-such-issue-unique-934789')).json();
