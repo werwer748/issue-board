@@ -33,7 +33,7 @@ export function createApiServer(options = {}) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const port = Number(process.env.PORT ?? 3001);
+  const port = Number(process.env.PORT ?? 4174);
   createApiServer().listen(port, () => {
     console.log(`Dashboard API listening on port ${port}`);
   });

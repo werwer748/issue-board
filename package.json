@@ -2,10 +2,21 @@
   "name": "issue-board",
   "private": true,
   "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
     "test": "node --test tests/*.test.mjs",
     "accept": "node --test acceptance/*.test.mjs"
   },
   "engines": {
     "node": ">=22"
+  },
+  "type": "module",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
   }
 }
