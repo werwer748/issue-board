@@ -1,3 +1,5 @@
+import { issuePercentage } from '../format.js';
+
 const TOP = 10;
 
 // 서버의 labelCounts(전체 데이터 기준, 정렬 완료)를 그대로 표시한다.
@@ -19,8 +21,11 @@ export default function LabelStats({ labelCounts = [], total }) {
                 <span>{name}</span>
                 <span className="count">{count}</span>
               </div>
-              <div className="bar">
-                <span style={{ width: `${(count / max) * 100}%` }} />
+              <div className="bar-row">
+                <div className="bar">
+                  <span style={{ width: `${(count / max) * 100}%` }} />
+                </div>
+                <span className="percentage muted small">{issuePercentage(count, total)}%</span>
               </div>
             </li>
           ))}

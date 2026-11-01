@@ -5,6 +5,11 @@ export function formatDate(iso) {
   return Number.isNaN(d.getTime()) ? '' : dateFmt.format(d);
 }
 
+// 분모는 검색·필터 적용 전 전체 이슈 수이며, 라벨별 건수의 합이 아니다.
+export function issuePercentage(count, total) {
+  return total === 0 ? 0 : Math.round((count / total) * 100);
+}
+
 // 제목을 검색어와 일치하는 조각/아닌 조각으로 나눈다. 원래 글자(대소문자 포함)는 그대로 둔다.
 // 찾는 방식은 서버(server/dashboard.mjs)와 같다: 검색어는 앞뒤 공백 제거 → 맨 앞 # 제거 → 소문자,
 // 제목은 toLowerCase()한 문자열에서 부분 문자열로 찾는다. 특수문자는 일반 글자로 취급된다.
