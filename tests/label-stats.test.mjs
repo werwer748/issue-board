@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { filterDashboard } from '../server/dashboard.mjs';
-import { issuePercentage } from '../src/format.js';
+import { issuePercentage, labelBarAriaLabel } from '../src/format.js';
 
 for (const [count, total, expected] of [
   [5, 12, 42],
@@ -32,4 +32,26 @@ test('label percentages use all issues, including unlabelled issues, regardless 
     ]));
     assert.deepEqual(percentages, { bug: 67, api: 33, '라벨 없음': 33 });
   }
+});
+
+test('label bar aria-label names the label, count and percentage', () => {
+  assert.equal(labelBarAriaLabel('bug', 5, 12), 'bug: 5개, 전체의 42%');
+  assert.equal(labelBarAriaLabel('라벨 없음', 0, 0), '라벨 없음: 0개, 전체의 0%');
+});
+
+test('label bar aria-label uses the same percentage as the visible text', () => {
+  const data = {
+    issues: [
+      { number: 1, title: 'First', state: 'open', labels: ['bug', 'api'] },
+      { number: 2, title: 'Second', state: 'closed', labels: ['bug'] },
+      { number: 3, title: 'Third', state: 'open', labels: [] },
+    ],
+  };
+  const dashboard = filterDashboard(data, { query: 'first' });
+  const labels = dashboard.labelCounts.map(({ name, count }) => {
+    const label = labelBarAriaLabel(name, count, dashboard.total);
+    assert.ok(label.endsWith(`전체의 ${issuePercentage(count, dashboard.total)}%`));
+    return label;
+  });
+  assert.deepEqual(labels, ['bug: 2개, 전체의 67%', '라벨 없음: 1개, 전체의 33%', 'api: 1개, 전체의 33%']);
 });

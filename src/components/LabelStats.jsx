@@ -1,4 +1,4 @@
-import { issuePercentage } from '../format.js';
+import { issuePercentage, labelBarAriaLabel } from '../format.js';
 
 const TOP = 10;
 
@@ -17,15 +17,16 @@ export default function LabelStats({ labelCounts = [], total }) {
         <ol>
           {items.map(({ name, count }) => (
             <li key={name}>
-              <div className="stat-row">
+              {/* 이름·건수·퍼센트는 막대의 aria-label에 모두 들어 있으므로, 보이는 글자는 두 번 읽히지 않게 숨긴다. */}
+              <div className="stat-row" aria-hidden="true">
                 <span>{name}</span>
                 <span className="count">{count}</span>
               </div>
               <div className="bar-row">
-                <div className="bar">
+                <div className="bar" role="img" aria-label={labelBarAriaLabel(name, count, total)}>
                   <span style={{ width: `${(count / max) * 100}%` }} />
                 </div>
-                <span className="percentage muted small">{issuePercentage(count, total)}%</span>
+                <span className="percentage muted small" aria-hidden="true">{issuePercentage(count, total)}%</span>
               </div>
             </li>
           ))}
